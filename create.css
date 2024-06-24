@@ -1,0 +1,146 @@
+*{
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main{
+
+	background-image: url("photo.jpg");
+	height: 100vh;
+	background-size: cover;
+}
+
+.btnone i{
+	color: white;
+	font-weight: 600px;
+	position: absolute;
+	font-size: 35px;
+	left: 16px;
+	line-height: 50px;
+	cursor: pointer;
+	transition: all 0.4s linear;
+}
+
+.sidebar{
+
+	position: fixed;
+	height: 100vh;
+	width: 300px;
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  transition: all 0.4s linear;
+	left: -350px;
+
+}
+
+
+.sidebar .logo{
+
+	position: absolute;
+	width: 100%;
+	line-height: 50px;
+	box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+	height: 60px;
+}
+
+
+.sidebar .logo  a{
+
+	position: absolute;
+	left: 60px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 500px;
+}
+
+.sidebar .menu{
+	position: absolute;
+	width: 100%;
+	top: 80px;
+}
+
+
+.sidebar .btntwo{
+	color: grey;
+	font-size: 20px;
+	position: absolute;
+	line-height: 50px;
+	left: 276px;
+	transition: all 0.4s linear;
+/*	opacity: 0;*/
+}
+
+.sidebar .menu li{
+
+	margin-top: 6px;
+	padding: 15px 20px;
+}
+
+.sidebar .menu i,a{
+
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.sidebar .menu i{
+	padding-right: 10px;
+}
+
+.sidebar .social{
+
+	
+	position: absolute;
+	left: 25%;
+	bottom: 50px;
+}
+
+.sidebar .social i{
+
+	color: white;
+	opacity: 0.5;
+	padding: 0 5px;
+}
+
+#check{
+
+	display: none;
+
+}
+
+.sidebar .menu li:hover{
+
+
+ box-shadow:0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.btnone i:hover{
+
+	font-size: 40px;
+}
+
+
+.btntwo i:hover{
+
+	font-size: 30px;
+   
+}
+
+.sidebar .social i:hover{
+	opacity: 1;
+	transform: scale(1.5);
+}
+
+#check:checked ~ .sidebar{
+	left: 0;
+}
+
+#check:checked ~ .btnone i{
+	opacity: 0;
+}
